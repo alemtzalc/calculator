@@ -19,9 +19,3 @@ steps:
     npm run build
     npm test
   displayName: 'npm install, build, and test'
-
-- task: DownloadPipelineArtifact@2
-  inputs:
-    buildType: 'current'
-    artifactName: 'buid'
-    targetPath: '$(Pipeline.Workspace)'
